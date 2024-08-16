@@ -72,6 +72,25 @@ namespace ScreenSound.Migrations
                     b.ToTable("Musicas");
                 });
 
+            modelBuilder.Entity("ScreenSound.Shared.Modelos.Modelos.Genero", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Generos");
+                });
+
             modelBuilder.Entity("ScreenSound.Modelos.Musica", b =>
                 {
                     b.HasOne("ScreenSound.Modelos.Artista", "Artista")

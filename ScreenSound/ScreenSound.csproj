@@ -26,7 +26,7 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ScreenSound.Shared.Dados\ScreenSound.Shared.Dados.csproj" />
+    <ProjectReference Include="..\ScreenSound.API\ScreenSound.API.csproj" />
     <ProjectReference Include="..\ScreenSound.Shared.Modelos\ScreenSound.Shared.Modelos.csproj" />
   </ItemGroup>
 
